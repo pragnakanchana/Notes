@@ -1,0 +1,140 @@
+- Objects - members can be accessed in two notations - dot and bracket 
+- bracket notation is used when we figure out which property to use during run time
+- arrays, funcitons etc are considered as objects in JS - typeOf ar => object
+- a = "abc", b = 5 
+	- a*b => NaN, for all invalid expressions including numbers
+- a = '5' , b = 5 - irrespective of the keyword used to declare variable
+	- a === b => false
+	- a == b => true
+	- true == 1 => true
+	- Strict Equality - considers type + value
+	- Loose Equality - considers Value
+- Logical Operators with Non Booleans
+	- Falsy Values in JS include - which evaluates to false when there in logical expressions
+		- empty string - ''
+		- boolean false
+		- NaN - Not a number - special value in JS
+		- 0
+		- null
+		- undefined
+	- Any thing that is not falsy is - Truthy
+	- Follows left to right evaluation 
+		- in case of OR 
+			-  first truthy value will be returned incase if there exists a truthy vlaue
+			- otherwise, returns last falsy value
+		- in case of AND
+			- return last truthy value if there exists a truthy vlaue
+			- otherwise returns first falsy value
+		- <img width="232" alt="Screenshot 2022-07-14 at 3 31 26 PM" src="https://github.com/user-attachments/assets/df3266b3-f7bc-418e-8a66-b13f44405b37">
+		- Example with Undefined
+			- console.log(undefined || true) //true
+			- console.log(undefined || false) //false
+			- console.log(undefined && true) //undefined
+			- console.log(undefined && false) //undefined
+			- console.log(true && undefined) //undefined
+			- console.log(false && undefined) //false
+- For in , For of loops
+	- For in - used to access elements with index in an array / to access keys in a json object : for index in arr:
+	- for of -  can only be used with iterables and not with objects, to access elements of an array directly
+- value in a key value pair can be anything in JS : including function 
+	- eg : x : funtion() {}
+- Constructor function Vs Factory Function
+	- https://chamikakasun.medium.com/javascript-factory-functions-vs-constructor-functions-585919818afe#:~:text=A%20factory%20function%20is%20any,keyword%2C%20it's%20a%20factory%20function.
+	- whenever an object is created with new key word then _.proto_ will be object._proto_
+	- other wise it gets treated as a normal funciton , which returns the specified return value, and return undefined incase if nothing is defined
+	- in term of function definition,
+		- for Constructor funciton - this is used to initiate keys with values
+		- for Factory Fucntions : an object is  initiated while it is being created
+- Dynamic nature of Objects
+	- even after the initial declaration and initialization of an object, we can add new members to the object or delete existing members using "delete" keyword
+		- this can be done even to the variables which are declared using "const" keyword
+			- const keyword doesn't allow to reassign or redclare the entire object but it allows to add/delete members of an  object
+- Constructor Property :
+	- every. object has a constructor property, obj.constructor gives the constructor used for that object
+	- let x = {} , x.constructor gives object()
+		- that is because JS internally takes x = {} as x = new Object() =>. object is the parent class for all the classes 
+		- similarly we use literals to initialize or declare instead of using new Constructor()
+			- eg: true/ false for new Boolean()
+			- ""/ '' / `` for new String()
+			- 1,2, 3.. for new Number()
+- In JS, all functions are objects and has properties like name, length etc - which gives name of funciton and number of arguments resp
+- Objects maintains references where as primitives maintains values
+	- usecase : if the newObject should not get updated with the oldObject, then instead of copying, initiallize it with { ...oldObject }, this calls new Object(). 
+	- eg: 
+	  
+- To create a clone of an object, Object.assign({}, oldobject) can be used.
+- ${x} -> placeholder in which variables or expressions can be used - entire string needs to be enclosed in ``
+- Object Equality: 
+	- Referential Equality:
+		- true when pointers are same
+		- https://www.geeksforgeeks.org/what-is-object-equality-in-javascript/
+	- Shallow vs Deep Comparision ???
+- Arrays : built - in functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+	- Find :
+		- for primitives - indexOf, lastIndexOf functions
+		- for reference types - define callback function for objects - user defined
+		- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find - ???
+		- 
+	- importance of ... 
+		- 3 dots used as two operators
+			- Spread Operator - to copy an entire object to another object/ an entire array to another new array 
+				- eg : newObject = { ...oldObject , "hi" : "hello"}
+			- Rest Operator - https://codeburst.io/what-are-three-dots-in-javascript-6f09476b03e1 -  , used in functions to accept more than one arguments in the form of an array
+	- arr.forEach((element, index) => {})
+	- arr.filter( () => ()) -> filters array elements based up on the criteria in call back function
+	- map : arr.map(() => { return ....}) or arr.map(() => ()) (for arrow funcs, return statement needs to be enclosed in ())
+- Functions  - can be defined in two ways
+	- Function declaration
+		- eg : function () {}
+	- Anonymous Funciton Expression
+		- eg : const x = funciton() {}
+		- called as x()
+	- A func defined via Function Declaration can be called before its declaration / definition
+	- But a func defined via anonymous Function Expression throws an error when called before defining it.
+	- reason : JS engine when execiuting the code, it moves all the function declarations to the top and then executes rest of the code.
+	- This is called Hoisting - the process of moving funcition declarations to the top - done automatically by JS engine
+	-  Default Parameters - make sure the default parameters are in the end of arguments list, to reduce ambuiguity 
+		- as an alternative to use the default value of a function - undefined can be passed in it.
+- Var vs Let
+	- var keyword scope is not limited to block in which it is declared, but limited to function
+	- let - limited to block
+	- another issue with var is... it gets attached to window object , creates ambiguity in case if a 3rd party library is used and it has variable with same name, it overrides.
+	- eg ; 
+	  
+	- all the global objects are attached to window object, including the functions defined
+- This keyword
+	- this in a method represents object in which it is used.
+	- this in a funciton represennts the window object - global object - if used in default way
+	- difference between mthod and function - 
+	  
+	- but when new operator is used, then it creates a new empty object and refers to it
+	- Call back functions which are not arrow functions are like regular functions - refers to window object with this keyword,
+	- ForEach accepts two args - one callback funciton and two - args to that function, to use this to refer the object, send this as 2nd arg
+	- bind() is used to use present object instead of window object
+	- all this can be solved by using an arrow function which doesn't use window as its this object, instead uses current object.
+- Arrow Funciton : ????
+	- there is no this concept in arrow function, scope limited to blockd
+- Event loop -https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+- Array and Nested Object Destructuring
+	- 
+	- Destructuring useful when - only few arguments are used in a object passed to a funciton
+	- array destructuring :
+		- 
+		- 
+- apply fucntion - to send an object as this reference - basically to refer to its parent function
+- Spread Vs Rest Operator - https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/#:~:text=The%20main%20difference%20between%20rest,expands%20iterables%20into%20individual%20elements.
+	- 
+	- usecase : when we want to use the existing object but want to change few attributes (values of few keys) 
+
+
+
+JIT
+- https://www.htmlgoodies.com/javascript/what-is-the-javascript-engine-and-how-it-works/
+- Many people still call JavaScript an interpreted programming language but that is no longer the case. Current JavaScript Engine use the concept of both compilation and interpretation at the same time, which is known as Just-in-Time (JIT) compilation.
+- how does the JavaScript Just-in-Time compiler work
+	- As a new piece of JavaScript code enters the JavaScript Engine, the first step performed is parsing of the code. During this process, the code is parsed into a data structure called the Abstract Syntax Tree (AST).
+	- The Abstract Syntax Tree first splits each line of code into pieces that are meaningful to JavaScript, such as the let, static, or function keywords. 
+	- It then saves these pieces of code into a tree-like structure. 
+	- The next step checks whether there are any syntax errors and, if none are found, the resulting tree is used to generate the machine code.
+
+
