@@ -19,6 +19,10 @@
 	- speacial file - to show loader to user
 - error.tsx
 	- special file - client side component that renders error view when we throw an error.
+   	- same as Error Boundary - any unhandled exception would render Error.tsx
+   	- only the affected part of page is shown error screen and can be recovered easily.
+   	- recovering
+   	  	- by sending reset callback to error component and onclick triggering it.
 
 ### Special Files
 - page.tsx
@@ -27,3 +31,6 @@
 - not-found.tsx
 - loading.tsx
 - error.tsx
+<img width="845" alt="Screenshot 2024-10-01 at 5 55 52 PM" src="https://github.com/user-attachments/assets/23189804-b58d-4c7c-961a-c6c121582c9f">
+
+
