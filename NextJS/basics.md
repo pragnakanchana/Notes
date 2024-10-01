@@ -1,3 +1,4 @@
+# Routing
 ### Folder Structure:
 
 - .next folder is generated when dev or build is run, it's from this folder, Next JS application is served.
@@ -49,8 +50,20 @@
 
 ### Route Handlers
 <img width="919" alt="Screenshot 2024-10-02 at 12 06 15 AM" src="https://github.com/user-attachments/assets/054f9694-9757-4827-bab3-b0d77ffdd3b2">
+
 - route.ts - naming convention - export GET method and return response using Response()
 - GET and POST Requests etc - export methods
 - query parameters can be extracted with request object
+
+#### Caching with Route Handlers
+- by default, on prod build - caching is on.
+- Segment Config Option - to opt out caching
+
+
+### Middleware
+- to add , match or modify requests or response.
+
+# Rendering
+
 - redirects - when route is not found - using redirect('')
 - headers - can be read from Request Object
