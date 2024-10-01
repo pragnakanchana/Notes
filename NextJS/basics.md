@@ -44,5 +44,10 @@
 	- have default.tsx file
 
 
-### Conditional Routes
+### Intercepting Routes
+- for scenarios like, opening login modal by changing route.
+
+### Route Handlers
+<img width="919" alt="Screenshot 2024-10-02 at 12 06 15 AM" src="https://github.com/user-attachments/assets/054f9694-9757-4827-bab3-b0d77ffdd3b2">
+- route.ts - naming convention - export GET method and return response using Response()
 - 
