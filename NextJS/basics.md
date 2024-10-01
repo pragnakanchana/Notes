@@ -54,16 +54,28 @@
 - route.ts - naming convention - export GET method and return response using Response()
 - GET and POST Requests etc - export methods
 - query parameters can be extracted with request object
+- redirects - when route is not found - using redirect('')
+- headers - can be read from Request Object
 
 #### Caching with Route Handlers
 - by default, on prod build - caching is on.
 - Segment Config Option - to opt out caching
 
-
 ### Middleware
 - to add , match or modify requests or response.
 
 # Rendering
+- CSR:
+- <img width="839" alt="Screenshot 2024-10-02 at 1 23 48 AM" src="https://github.com/user-attachments/assets/cbb6f4c2-19aa-4ee0-bd6f-190d725e1921">
+- Drawbacks:
+	- SEO Optimisation
+	- Performance - client heavy
+- SSR:
+	- SEO Optimised
+	- Hydration - (static html page which is served initially is brought to live by downloading JS files).<img width="1338" alt="Screenshot 2024-10-02 at 1 28 38 AM" src="https://github.com/user-attachments/assets/d9b8ee6c-a249-496d-9b79-af4a07ed2162">
 
-- redirects - when route is not found - using redirect('')
-- headers - can be read from Request Object
+	- SSR can be categorized into two solutions:
+		- SSG - Static Site Generation
+		- SSR - Server Side Rendering
+  - 
+ - 
