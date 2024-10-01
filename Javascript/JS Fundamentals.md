@@ -60,7 +60,7 @@
 - In JS, all functions are objects and has properties like name, length etc - which gives name of funciton and number of arguments resp
 - Objects maintains references where as primitives maintains values
 	- usecase : if the newObject should not get updated with the oldObject, then instead of copying, initiallize it with { ...oldObject }, this calls new Object(). 
-	- eg: 
+	- eg: <img width="263" alt="Screenshot 2022-07-16 at 1 46 27 PM" src="https://github.com/user-attachments/assets/a1fc8b88-a8c5-4f1e-a6fe-f7c9e0878b86">
 	  
 - To create a clone of an object, Object.assign({}, oldobject) can be used.
 - ${x} -> placeholder in which variables or expressions can be used - entire string needs to be enclosed in ``
@@ -99,13 +99,15 @@
 	- var keyword scope is not limited to block in which it is declared, but limited to function
 	- let - limited to block
 	- another issue with var is... it gets attached to window object , creates ambiguity in case if a 3rd party library is used and it has variable with same name, it overrides.
-	- eg ; 
+	- eg ; <img width="770" alt="Screenshot 2022-07-17 at 2 24 39 PM" src="https://github.com/user-attachments/assets/11e1fb23-6279-4e3c-a721-e5236543b7f1">
+
 	  
 	- all the global objects are attached to window object, including the functions defined
 - This keyword
 	- this in a method represents object in which it is used.
 	- this in a funciton represennts the window object - global object - if used in default way
-	- difference between mthod and function - 
+	- difference between mthod and function - <img width="925" alt="Screenshot 2022-08-05 at 5 11 40 PM" src="https://github.com/user-attachments/assets/16dca7ab-5882-4c6c-9c8e-6e354933549e">
+
 	  
 	- but when new operator is used, then it creates a new empty object and refers to it
 	- Call back functions which are not arrow functions are like regular functions - refers to window object with this keyword,
@@ -116,14 +118,17 @@
 	- there is no this concept in arrow function, scope limited to blockd
 - Event loop -https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
 - Array and Nested Object Destructuring
-	- 
+	-  <img width="369" alt="Screenshot 2022-07-18 at 12 49 08 PM" src="https://github.com/user-attachments/assets/766ed441-165b-4504-891a-63ebba4c92d6">
 	- Destructuring useful when - only few arguments are used in a object passed to a funciton
 	- array destructuring :
-		- 
+		- <img width="246" alt="Screenshot 2022-07-20 at 9 56 58 PM" src="https://github.com/user-attachments/assets/6e9826e4-3c2e-4e1a-9de2-e2ffc3e1d80b">
+
+
 		- 
 - apply fucntion - to send an object as this reference - basically to refer to its parent function
 - Spread Vs Rest Operator - https://www.freecodecamp.org/news/javascript-rest-vs-spread-operators/#:~:text=The%20main%20difference%20between%20rest,expands%20iterables%20into%20individual%20elements.
-	- 
+	- <img width="241" alt="Screenshot 2022-07-18 at 1 12 55 PM" src="https://github.com/user-attachments/assets/28cbe4ea-f5df-40dc-8872-87451ed35d00">
+
 	- usecase : when we want to use the existing object but want to change few attributes (values of few keys) 
 
 
