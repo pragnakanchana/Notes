@@ -32,12 +32,17 @@
 - not-found.tsx
 - loading.tsx
 - error.tsx
+- default.tsx - for unmatched routes
 <img width="845" alt="Screenshot 2024-10-01 at 5 55 52 PM" src="https://github.com/user-attachments/assets/23189804-b58d-4c7c-961a-c6c121582c9f">
 
 ### Parallel Routes
 - are created using names @slots - folder name convention - prefix @
 - each section (route) can have it's own loading and error screens.
 - easy to maintain
+- can navigate to specific routes of a section
+- **Un-matched Routes:**
+	- have default.tsx file
+
+
+### Conditional Routes
 - 
-
-
