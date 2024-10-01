@@ -23,6 +23,7 @@
    	- only the affected part of page is shown error screen and can be recovered easily.
    	- recovering
    	  	- by sending reset callback to error component and onclick triggering it.
+   	- handling errors at layout level : have one error.tsx at the parent of layout.tsx 
 
 ### Special Files
 - page.tsx
@@ -32,5 +33,11 @@
 - loading.tsx
 - error.tsx
 <img width="845" alt="Screenshot 2024-10-01 at 5 55 52 PM" src="https://github.com/user-attachments/assets/23189804-b58d-4c7c-961a-c6c121582c9f">
+
+### Parallel Routes
+- are created using names @slots - folder name convention - prefix @
+- each section (route) can have it's own loading and error screens.
+- easy to maintain
+- 
 
 
