@@ -73,9 +73,14 @@
 - SSR:
 	- SEO Optimised
 	- Hydration - (static html page which is served initially is brought to live by downloading JS files).<img width="1338" alt="Screenshot 2024-10-02 at 1 28 38 AM" src="https://github.com/user-attachments/assets/d9b8ee6c-a249-496d-9b79-af4a07ed2162">
-
 	- SSR can be categorized into two solutions:
 		- SSG - Static Site Generation
-		- SSR - Server Side Rendering
-  - 
- - 
+		- SSR - Server Side Rendering<img width="1320" alt="Screenshot 2024-10-02 at 1 30 37 AM" src="https://github.com/user-attachments/assets/8a044bcd-5e79-4e2e-9904-17b342bb9b09"> <img width="1339" alt="Screenshot 2024-10-02 at 1 31 06 AM" src="https://github.com/user-attachments/assets/9a256ef8-d99b-42aa-bd54-dfa9735557c8">
+  <img width="851" alt="Screenshot 2024-10-02 at 1 31 56 AM" src="https://github.com/user-attachments/assets/e87a954c-e053-413c-a660-e1b9c3785b01"> 
+<img width="900" alt="Screenshot 2024-10-02 at 1 32 28 AM" src="https://github.com/user-attachments/assets/47b12db4-2c33-495d-b018-6a2ffee21402">
+	- Drawbacks:
+ 		- having to load data for the entire page.
+     		- having to load entire JS for the page.
+         	- having to hydrate entire page
+          - these lead to "All or Nothing" waterfall problem.
+
