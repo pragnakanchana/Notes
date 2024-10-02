@@ -83,4 +83,32 @@
      		- having to load entire JS for the page.
          	- having to hydrate entire page
           - these lead to "All or Nothing" waterfall problem.
-
+- Suspense SSR:
+	- helps with selective hydration when we don't want entier page to load only when entire hydration happens. instead, we can add selective hydration by wrapper few components in suspense and giving a fallback component until that hydration piece is done.
+ 	- Suspense along with code splitting works better - downloading JS bundling in parts
+  	- traditional problems with SSR are addressed with Suspense SSR.
+  	- Drawbacks with Suspense SSR:
+  		- Does users really have to download lot of data (JS) ?? - perf on low end browsers.
+  	   	- Should all the components be hydrated even those who doesn't need interactivity ?
+  	 
+- Server Components:
+	- dual-component model: - client components & server components
+	- Client Components:
+ 		- rendered on client side. but can also be sent from server as html to improve perceived performance.
+		- have access to client environment like cookies, local storage, useState, useEffect etc so that you can build components for specific usecases.
+    	- Server Components:
+		- code resides on server and is never downloaded to browser.
+		- Benefits:
+  			- Reduced Bundled Sizes.
+       			- benefits users with low network, not having the need to download, parse and execute JS.
+            		- removes hydration step.
+                	- efficient with data fetching as server side has access to databases or file systems.
+                   	- leveraging computation power of servers.
+                   	- security with API keys
+                   	- enables caching on server side, reduces costs, speeds up delivery of content.
+                   	- Initial Page load and FCP are significantly improved with server components.
+                   	- Improved SEO - fully accesible by search ENgine bots.
+                   	- users starts seeing partial parts of page.
+- RSC Loading Sequence:
+  	- <img width="1300" alt="Screenshot 2024-10-03 at 12 50 19 AM" src="https://github.com/user-attachments/assets/31f6c1e3-661b-4e16-ac20-7eaa354b9faa">
+	- 
