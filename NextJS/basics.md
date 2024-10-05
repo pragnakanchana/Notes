@@ -112,7 +112,7 @@
 - RSC Loading Sequence:
   	- <img width="1300" alt="Screenshot 2024-10-03 at 12 50 19 AM" src="https://github.com/user-attachments/assets/31f6c1e3-661b-4e16-ac20-7eaa354b9faa">
 
-
+## Rendering Strategies
 - rendering strategies
 	- static rendering
 	- dynamic rendering
@@ -124,5 +124,27 @@
 
 ### Dynamic Rendering
 - by using cookies(), header() etc - we can make a route dynamic
+- <img width="1369" alt="Screenshot 2024-10-05 at 6 14 19 PM" src="https://github.com/user-attachments/assets/ceff752f-893a-49db-bc59-888838dce50c">
 
-#### Data Fetching
+### Streaming
+- progressive UI rendering from server
+- work is divided into chunks and delivered to client so that parts can be rendered without having to wait for entire page
+- significantly improves initial page load performance
+- important and can be great with async components.
+
+## Server and Client Composition Patterns
+- server components:
+	- Fetching data
+   	- Directly accessing backend resources
+   	- security for APi keys etc
+   	- heavy pieces helps reduce client side javascript
+- client components:
+	- interactivity
+   	- handling event listeners
+   	- accessign hooks - browser side things
+   	- browser APIs
+   	- custom hooks
+   	- react class components
+
+### Server only code:
+- to avoid server only code to get bundled with client side js - we can use server-only
