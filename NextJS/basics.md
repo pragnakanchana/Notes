@@ -111,4 +111,18 @@
                    	- users starts seeing partial parts of page.
 - RSC Loading Sequence:
   	- <img width="1300" alt="Screenshot 2024-10-03 at 12 50 19 AM" src="https://github.com/user-attachments/assets/31f6c1e3-661b-4e16-ac20-7eaa354b9faa">
-	- 
+
+
+- rendering strategies
+	- static rendering
+	- dynamic rendering
+	- streaming
+
+ #### Static rendering
+ - html is generate while build phase, cached and served by cdn.
+ - default rendering strategy
+
+### Dynamic Rendering
+- by using cookies(), header() etc - we can make a route dynamic
+
+#### Data Fetching
