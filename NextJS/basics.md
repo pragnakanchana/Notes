@@ -148,4 +148,16 @@
 
 ### Server only code:
 - to avoid server only code to get bundled with client side js when called from client component - we can use server-only package
-- 
+
+### Context Provider:
+- have a component for provider - client component and render children in it
+
+### Client-only Code:
+- interactivity
+- interation with DOM
+- by including client-only package, we ensure during build time it throws an error if by mistakely included in server components. 
+- Third party libraries which are using client things, can be used with "use client" tag and called from server components.
+
+### Client Component Placement
+-  when a component is created as server component, by default all of it's children in that subtree becomes client component. so it's advisable to have client components at the leaves.
+
