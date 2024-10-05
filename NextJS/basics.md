@@ -161,3 +161,16 @@
 ### Client Component Placement
 -  when a component is created as server component, by default all of it's children in that subtree becomes client component. so it's advisable to have client components at the leaves.
 
+# Data Fetching
+- components can be written as async components
+- next js automatically- by default caches fetch result - data cache
+- opting out of data cache - cache - "no-store". If a request is mentioned as no-store cache, it doesn't cache the later fetch requests in the components.
+- nextjs doesnot cache any fetch request which is mentioned later dynamic functions (cookies(), searchParams())
+
+## Request Memoization
+- eliminates duplication of same network calls
+- <img width="1065" alt="Screenshot 2024-10-06 at 4 07 38 AM" src="https://github.com/user-attachments/assets/9de3a7f6-4b45-487f-b55f-673ff74a429f"><img width="1330" alt="Screenshot 2024-10-06 at 4 09 43 AM" src="https://github.com/user-attachments/assets/576c4e6d-323d-4349-87f7-81f8238fb905">
+- cache timing can be set by revalidate
+- 
+
+
