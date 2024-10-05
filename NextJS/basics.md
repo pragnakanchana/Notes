@@ -147,4 +147,5 @@
    	- react class components
 
 ### Server only code:
-- to avoid server only code to get bundled with client side js - we can use server-only
+- to avoid server only code to get bundled with client side js when called from client component - we can use server-only package
+- 
