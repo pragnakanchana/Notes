@@ -63,7 +63,32 @@ API - application programming interface
   - security
  
 - Building Blocks
-  - 
+  - structure of request and response
+  - request:
+    - HTTP request line (url)
+      - Schema - HTTPS/HTTP/HTTP3
+      - ![image](https://github.com/user-attachments/assets/692df212-315c-45a2-a359-7015162425a2)
+      - # - fragment doesnt get sent from client to server.
+    - request headers
+      - host - target host
+      - origin -
+      - referrer - indicates the prev web page which is making request
+      - user-agent - client info - browser/os.
+      - accept - response content type
+      - Accept-language - response content language.
+      - accept-encoding - encoding algorithm
+      - connecton - to keep the tcp connection open - to eliminate hand shake for further requests. values - keep alive/close.
+      - authorization - send credentials
+      - cookies -
+      - if-modified-since
+      - cache-control - http caching 
+    - request body
+  - response:
+    - response status line
+    - response headers
+      - 
+    - response body
+- 
   
 
 
