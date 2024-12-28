@@ -104,7 +104,15 @@ API - application programming interface
 ## GraphQL
 - ![image](https://github.com/user-attachments/assets/01fa0455-2c0f-4da5-be51-1ae762d47f4b)
 - Graph Query Language
-- 
+- Benefits
+  - avoids over fetching
+  - avoids under fetching
+  - better mobile performance
+ 
+- Http concepts remains same
+- REST vs GraphQL:
+  - <img width="737" alt="Screenshot 2024-12-29 at 2 18 09 AM" src="https://github.com/user-attachments/assets/ca2daf45-ec30-4029-bcd1-74cddf858e49" />
+  
 
   
 
