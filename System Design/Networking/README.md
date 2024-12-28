@@ -102,8 +102,10 @@ API - application programming interface
 
 
 ## GraphQL
+- ![image](https://github.com/user-attachments/assets/01fa0455-2c0f-4da5-be51-1ae762d47f4b)
+- Graph Query Language
+- 
 
-  
   
 
 
