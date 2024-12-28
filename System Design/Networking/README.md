@@ -48,6 +48,23 @@
 - to send and receive emails.
 
 ## REST APIs
+API - application programming interface
+- internally rest uses HTTP protocol
+- Benefits
+  - ease of use.
+  - Stateless -
+  - Scalability
+  - Flexibility with Data
+  - Uniform Interface - to read data from URL (HTTP's )
+  - Caching - HTTP
+  - Seperation of concerns
+  - Interoperability - lang agnostic
+  - ease of testing
+  - security
+ 
+- Building Blocks
+  - 
+  
 
 
 
