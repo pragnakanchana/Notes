@@ -68,7 +68,7 @@ API - application programming interface
     - HTTP request line (url)
       - Schema - HTTPS/HTTP/HTTP3
       - ![image](https://github.com/user-attachments/assets/692df212-315c-45a2-a359-7015162425a2)
-      - # - fragment doesnt get sent from client to server.
+      - fragment doesnt get sent from client to server.
     - request headers
       - host - target host
       - origin -
@@ -86,9 +86,24 @@ API - application programming interface
   - response:
     - response status line
     - response headers
-      - 
+      - date - on which response is generated.
+      - server - may be lead security risks - so donot disclose
+      - content-type - type of response
+      - content-length - response length
+      - set-cookie - cookie that needs to be stored for future - eg: in case of signup.
+      - content-encoding - response content encoding
+      - if-modified-since
+      - cache-control - http caching
+      - eTag
     - response body
-- 
+  - Status Codes:
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+    - ![image](https://github.com/user-attachments/assets/a5f58bd9-c156-4c35-b5cc-30f3a253f422)
+
+
+## GraphQL
+
+  
   
 
 
