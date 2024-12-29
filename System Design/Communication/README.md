@@ -2,8 +2,7 @@
 - what are diff kinds of techiniques to communicate with backend from frontend.
 
 # Short Polling
-- ![image](https://github.com/user-attachments/assets/c71e6ac8-3c11-4d9d-8d83-cc4712f65f23)
-```javascript
+- ![image](https://github.com/user-attachments/assets/c71e6ac8-3c11-4d9d-8d83-cc4712f65f23)```javascript
 const endpointUrl = 'https://example.com/api/updates';
 const pollingInterval = 5000; // 5 secs
 
