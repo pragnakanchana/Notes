@@ -128,8 +128,31 @@ API - application programming interface
   - Query/Mutation:
     - Query: to get the data.
     - Mutation: to update the data.
-    - 
-  
+   
+  - REsolvers:
+    - functions which resolves the query.
+   
+- Official Docs is very clear
+
+
+## GRPC:
+- Google remote procedure call.
+- uses HTTP2
+- data that is transfered needs to be serialized using protocol serialization technique.
+- Bi-directional streaming. ![image](https://github.com/user-attachments/assets/95bd61a3-f5e2-46f8-8062-7efa40fd3077)
+
+- one tcp connection and bi-directional streaming can be done with that one connection.
+- Protocol Buffer (ProtoBuff) - (by google)
+  - it's an IDL - Interface Definition Language.
+  - hanldes serialisation/deserialisation.
+  - binary support - data is transeferred in a binary way - making it faster.
+  - extension - .proto (proto3)
+ 
+- Benefits:
+  - using proto buf, since it's binary data - uses less  CPU resources.
+  - faster.
+
+
 
   
 
