@@ -42,6 +42,47 @@ pollServer();
  
 - Usecases:
   - real time connections
+ 
+
+# Web socket
+- full duplex communication.
+- ![image](https://github.com/user-attachments/assets/2a86f409-72e6-472e-9383-6e18813a750c)
+- single long live on TCP connection.
+- continuous bi-directional communication
+- usecases:
+  - trading dashboards
+  - online gaming
+  - Collab - like google sheets, docs.
+ 
+- Challanges:
+  - Hardware - resources - as users increases, number of connections increases.
+  - sticky sessions - to handle the case where load balancer should send the request from a client to the same server
+  - Scaling
+  - Testing and Debugging.
+  - resource cleanup - once connection is ended, cleanup resources otherwise it keeps consuming.
+
+
+## Server Side Events:
+- ![image](https://github.com/user-attachments/assets/dbbf031a-68c9-4bb1-af41-cf3aa24e8f2d)
+- Long live unidirectional communication
+- single HTTP Connection
+- use cases: Feeds, notifications, monitoring dashboards.
+- Connection is of : keep-live type
+- each event comprises of data and id.
+- https://developer.mozilla.org/en-US/docs/Web/API/EventSource
+- Challanges:
+  - browser compatibility
+  - connection timeout - handle seperately
+  - resource utilisation
+  - sticky connection
+  - Testing
+  - Broadcasting
+ 
+
+## Web Hooks
+- 
+
+
 
 
 
