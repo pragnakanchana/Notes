@@ -151,6 +151,12 @@ API - application programming interface
 - Benefits:
   - using proto buf, since it's binary data - uses less  CPU resources.
   - faster.
+ 
+- Compared to REST
+  - it handles serialization, and it's language agnostic.
+  - it's efficient - 10x faster than REST.
+  - more secure.
+  - 
 
 
 
