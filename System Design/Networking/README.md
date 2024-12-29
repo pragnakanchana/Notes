@@ -104,6 +104,7 @@ API - application programming interface
 ## GraphQL
 - ![image](https://github.com/user-attachments/assets/01fa0455-2c0f-4da5-be51-1ae762d47f4b)
 - Graph Query Language
+- At its simplest, GraphQL is about asking for specific fields on objects.
 - Benefits
   - avoids over fetching
   - avoids under fetching
@@ -112,6 +113,22 @@ API - application programming interface
 - Http concepts remains same
 - REST vs GraphQL:
   - <img width="737" alt="Screenshot 2024-12-29 at 2 18 09 AM" src="https://github.com/user-attachments/assets/ca2daf45-ec30-4029-bcd1-74cddf858e49" />
+  - In a system like REST, you can only pass a single set of arguments—the query parameters and URL segments in your request. But in GraphQL, every field and nested object can get its own set of arguments, making GraphQL a complete replacement for making multiple API fetches.
+
+- Building Blocks
+  - Schema/Types:
+    - schema is like types in typescript. - also known as schema definition language.
+    - data types:
+      - two types: scalar and custom
+      - scalar
+        - ID, String, Int, Boolean
+      - custom:
+        - eg: Comments, POsts, Countries etc - custom defined ones.
+       
+  - Query/Mutation:
+    - Query: to get the data.
+    - Mutation: to update the data.
+    - 
   
 
   
