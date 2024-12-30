@@ -141,6 +141,13 @@ type data {
 - API Polling - long polling, server sent events, web sockets.
 - Polling vs web-sockets
 - ![image](https://github.com/user-attachments/assets/c8e608a0-22e2-4c91-b05c-397ad5306716)
+- for real time - web sockets are preferred - chats, google docs
+- Polling is useful when real time data is not that crucial - gmail, uber-rider status.
+- eg: Youtube live stream UI
+  - too many messages - we can't show every message in case of heavy loads
+  - max limit has tobe set per second - to show limitted number of messages.
+  - Real time is not required, near real time is okay.
+  - 
 
 
      
