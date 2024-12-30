@@ -29,7 +29,20 @@
 - donot change/migrate routes to one another - x/z to x/y/z etc - cause people might have already bookmarked the pages. - to handle this redirection is not a go to approach.
 - keep routes as simple as possible
 - Protected Routes - How to handle
-- 
+  - naive way - have a isAuthenticated bool at parent level and have checks to render.
+  - donot have authentication checks or logic where routes reside.
+  - rather, have a wrapper - and add outlet only when user is authenticated, outlet is the place where children is rendered.
+  ```javascript
+  <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Body />}></Route>
+          <Route element={<ProtectedRoute />}>
+            <Route path="/team" element={<Team />}></Route>
+          </Route>
+          <Route path="/about" element={<About lang={lang} />}></Route>
+        </Routes>
+      </BrowserRouter>
+  ```
 
 
 
