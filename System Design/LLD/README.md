@@ -140,7 +140,8 @@ type data {
 - Whatsapp, google sheets, cric scores etc.
 - API Polling - long polling, server sent events, web sockets.
 - Polling vs web-sockets
-- 
+- ![image](https://github.com/user-attachments/assets/c8e608a0-22e2-4c91-b05c-397ad5306716)
+
 
      
 
