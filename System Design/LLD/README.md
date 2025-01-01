@@ -147,6 +147,12 @@ type data {
   - too many messages - we can't show every message in case of heavy loads
   - max limit has tobe set per second - to show limitted number of messages.
   - Real time is not required, near real time is okay.
+  - API Polling is good to do.
+  - when we are getting huge amounts of data through API, limitting number of messages can be done on both frontend and backend.
+  - Have a limit for max number of messages in the chat window
+    - for the scenario where user leaves the tab as is for hours, html keep growing indefinitely and tab would endup unresponsive.
+    - cleanup HTML as we keep on adding new messages
+    - 
   - 
 
 
