@@ -77,6 +77,27 @@
 - first think of reusable components - like rating component, wishlist, ATC,
 - always break down into smaller pieces - to make them more modular and reusable - seperation of concerns.
 
+### API Design
+- Search/Filters
+- product info
+- Cart Listing
+- Add to Cart
+- Place Order
+- Payment Gateway API
+
+
+## Optimisation
+- Code splitting
+- Lazy loading  - Virtualisation
+- ATF
+  - defer/async
+  - pre-fetch
+- Image
+  - webp
+  - image priority
+  - [adaptive loading](https://web.dev/articles/adaptive-loading-cds-2019) - depending on network quality - resolution of images can be set.
+  - 
+
 
 
 
