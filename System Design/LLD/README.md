@@ -149,11 +149,18 @@ type data {
   - Real time is not required, near real time is okay.
   - API Polling is good to do.
   - when we are getting huge amounts of data through API, limitting number of messages can be done on both frontend and backend.
+  - reverse-col is required to make it look like chatbox - https://reactnative.dev/docs/flexbox#:~:text=column%2Dreverse%20Align%20children%20from,the%20right%20of%20the%20container.
   - Have a limit for max number of messages in the chat window
     - for the scenario where user leaves the tab as is for hours, html keep growing indefinitely and tab would endup unresponsive.
     - cleanup HTML as we keep on adding new messages
-    - 
-  - 
+   
+# Auto Suggest
+- debouncing is the technique to limit network calls when typed very fast
+- debouncing - can be implemented using setTimeout in a useEffect when searchedText changes - do the clear timeout in ()=>{} so that within 200 ms if searchtext changes it will remove the last callback and donot execute it.
+- Optimisations
+  1. debouncing
+  2. caching - on back press - optimise it by caching results.
+    
 
 
      
