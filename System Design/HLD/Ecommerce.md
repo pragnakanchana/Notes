@@ -118,12 +118,12 @@
 ## [Internationalization/Localization](https://web.dev/learn/design/internationalization)
 - diff countries has timezones, currencies
 - in html tag, we can give lang
-- <html lang="" >
-- <a href="..." >
 - RTL
   - direction of reading
   - CSS take care
-  - 
+- Capbility to change language
+- showing times - take care of time zones
+- 
 
 
 
