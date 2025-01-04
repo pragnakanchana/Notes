@@ -54,5 +54,43 @@
   - Optimistic Updates.
  
 ### Implementation
+- Image Editing
+  - Crop / Resizing
+    - canvas API
+   
+- Filters
+  - CSS - photo editing app can be built
+  - 
+- Upload File
+  - HTTP Post - (multipart/ form-data)
+  - Base 64 encoding
+  - File Chuncking / resumable uploads
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
