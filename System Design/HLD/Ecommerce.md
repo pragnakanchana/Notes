@@ -96,6 +96,33 @@
   - webp
   - image priority
   - [adaptive loading](https://web.dev/articles/adaptive-loading-cds-2019) - depending on network quality - resolution of images can be set.
+ 
+
+## SEO
+- title, meta tags - with right set of keywords
+- sitemap.xml - all the links we want to index to search engine
+  - [flipkart](https://flipkart.com/sitemap)
+- robots.txt
+  - [amazon](https://www.amazon.in/robots.txt)
+- canonical tags
+- Semantics
+- better page speed - better indexing
+- SSR is better for SEO
+- SSG - Static Site Generation
+- CSR is not good but there is a technique ![image](https://github.com/user-attachments/assets/ff6fbbcc-39f5-4965-9d67-159679da240c)
+- Shareable Links
+  - search/Filters has to be a part of Urls
+- Human Readble Urls
+
+
+## [Internationalization/Localization](https://web.dev/learn/design/internationalization)
+- diff countries has timezones, currencies
+- in html tag, we can give lang
+- <html lang="" >
+- <a href="..." >
+- RTL
+  - direction of reading
+  - CSS take care
   - 
 
 
