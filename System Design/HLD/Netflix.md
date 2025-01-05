@@ -47,7 +47,6 @@
 - **Poster**
   - Thumnails
 - **Closed/Open Caption**
-  - 
 - **Playback Controls**
   - controls - play/pause/mute/resollution set/
 - **Seeking**
