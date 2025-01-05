@@ -34,6 +34,8 @@
 - Image uploading Techniques - base64 encoding, chuncking etc.
 - SEO Techniques
 - i18n/l10n
+- Video Optimisation Techniques
+- 
 
 
 
