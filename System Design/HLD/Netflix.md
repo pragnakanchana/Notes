@@ -87,6 +87,11 @@
 - Video Players
 - Netflix has both vertical and horizontal Scrolls
   - two way pagination
+- Video Player
+  - HTML `<video>` tag
+  - mediaSource API
+  - libraries - chrome MediaPlayer, VideoJS, Shaka Player (open source)
+  - 
  
 ## Data models
 ```
