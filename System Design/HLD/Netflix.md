@@ -25,6 +25,7 @@
 - Device Support
   - Protocols would change depending on OS
 - Auth
+- 2 way pagination
 
 ## Video Streaming Terminologies
 - **Streaming**
@@ -63,6 +64,48 @@
   - SCC - Closed Captions
   - WebVTT 
 
+
+ ## Architecture
+ - **Views**
+   - Hero Section
+   - Video Player
+   - Video List
+ - **Controller**
+   - Video Player
+     - take care of understanding Bandwidth etc.
+   - Video Recommendation
+ - **Services**
+   - Video Player
+   - Video Recommendation
+ - **Data Storage**
+ - **CDN on Backend**
+
+## Implementation
+- Hero Section
+  - one fetched, cache it
+  - netflix uses GraphQL - apollo client
+- Video Players
+- Netflix has both vertical and horizontal Scrolls
+  - two way pagination
+ 
+## Data models
+```
+Recommendation{
+   VideoSectionList[], offset based pagiantion (data doesn't change frequently) {pagenum, limit} 
+}
+
+VideoSectionList{
+  category
+  Videos[], offset based pagiantion (data doesn't change frequently) {pagenum, limit} - horizontal pagination
+}
+
+Videos{
+  thumbnail
+  id
+  title
+  videoPreviewUrl
+}
+```
 
 
 
