@@ -17,10 +17,23 @@
   - HLD isn't about Coding
 
 
-HLDs:
+# HLDs:
 - [Instagram](https://github.com/pragnakanchana/Notes/blob/master/System%20Design/HLD/Instagram.md)
 - [Ecommerce](https://github.com/pragnakanchana/Notes/blob/master/System%20Design/HLD/Ecommerce.md)
-- 
+- [Facebook](https://github.com/pragnakanchana/Notes/blob/master/System%20Design/HLD/Facebook.md)
+- [Netflix](https://github.com/pragnakanchana/Notes/blob/master/System%20Design/HLD/Netflix.md)
+
+
+# Topics to Dig Deeper
+- Image and Icon Optimisation
+- Virtualisation - Intersection Observer
+- Optimistic updates
+- Image Editing - Canvas API
+- WYSIWYG Editor and it's limitations
+- File Chuncking
+- Image uploading Techniques - base64 encoding, chuncking etc.
+- SEO Techniques
+- i18n/l10n
 
 
 
