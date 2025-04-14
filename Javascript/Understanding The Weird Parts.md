@@ -6,8 +6,6 @@ JS - Interpreted or Compiled Language?
 
 
 - binding - Binding refers to the association of names in program text to the storage locations to which they refer
-- 
-
 - Syntax Parsers:
 	- A program that reads your code and determines what it does and if its grammar or syntax is valid.
 	- Compiler/ interpreter : converts human readable code to machine hardware understandable instructions.
