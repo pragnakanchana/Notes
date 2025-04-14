@@ -2,21 +2,7 @@
 JS - Interpreted or Compiled Language?
 - ref: https://medium.com/@osmanakar_65575/javascript-how-the-engine-compiles-6df6d5c6439c
 - Static typing , dynamic typing. -> static typing, executable code can be generated at compile time. with dynamic typing, executable code cannot be generated until run time.
-- 🔍 How does JIT work?
-```Here’s the process in a simplified breakdown:
-
-Parsing: The JavaScript engine first parses the code, creating an Abstract Syntax Tree (AST) and generating an intermediate representation (IR) of the program.
-
-Interpretation: Initially, the code is executed by an interpreter. At this point, the engine doesn't know the types of values (because JavaScript is dynamic), so it doesn't perform heavy optimization. It just starts executing as quickly as possible.
-
-Hot Code Detection: As the code runs, the JIT compiler looks for frequently executed paths (called "hot paths"). These are parts of the code that run often or take up a lot of time, like loops or functions that are called frequently.
-
-Compilation: Once the JIT compiler identifies hot paths, it compiles those parts of the code into machine code (native code that your CPU can execute). The process is done just-in-time, meaning only when it's needed and after detecting that it's worth optimizing.
-
-Execution of Optimized Code: The compiled machine code is cached and can be reused during further executions. This avoids recompiling the same part of code multiple times.
-
-Dynamic Optimization: The engine doesn’t just compile once and forget it. It can dynamically optimize the compiled code based on runtime information, like actual types and usage patterns. This can result in additional optimizations like inlining functions, loop unrolling, and constant folding.
-```
+<img width="948" alt="Screenshot 2025-04-15 at 12 54 18 AM" src="https://github.com/user-attachments/assets/f5778048-9d0e-43d7-94de-2f6baadd2e27" />
 
 
 - binding - Binding refers to the association of names in program text to the storage locations to which they refer
