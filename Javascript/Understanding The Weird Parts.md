@@ -15,7 +15,8 @@ JS - Interpreted or Compiled Language?
 
 *Execution of Optimized Code:* The compiled machine code is cached and can be reused during further executions. This avoids recompiling the same part of code multiple times.
 
-*Dynamic Optimization:* The engine doesn’t just compile once and forget it. It can dynamically optimize the compiled code based on runtime information, like actual types and usage patterns. This can result in additional optimizations like inlining functions, loop unrolling, and constant folding. ```
+*Dynamic Optimization:* The engine doesn’t just compile once and forget it. It can dynamically optimize the compiled code based on runtime information, like actual types and usage patterns. This can result in additional optimizations like inlining functions, loop unrolling, and constant folding.
+```
 
 
 - binding - Binding refers to the association of names in program text to the storage locations to which they refer
