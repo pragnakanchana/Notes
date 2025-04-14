@@ -127,7 +127,7 @@
 ### Diffing Algorithm
 
 1. If the root itself changes, clear the entire subtree.
-2. If `className` changes, only update the attribute.
+2. If `className` changes, only updates the attribute and tear down of sub tree doesn't happen.
 3. For lists:
    - Key prop helps avoid expensive line-by-line comparison.
 
