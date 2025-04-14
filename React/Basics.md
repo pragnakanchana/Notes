@@ -122,6 +122,7 @@
 - An in-memory copy of the actual DOM.
 - Faster for internal operations and syncing.
 - Allows diffing before touching the real DOM.
+- write to original DOM happens after batching a set of changes - happens at a certain frequency.
 
 ### Diffing Algorithm
 
