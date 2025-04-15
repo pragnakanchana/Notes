@@ -46,9 +46,6 @@ JS - Interpreted or Compiled Language?
 		2. Code Execution Phase:
 			- this is when variables assignment happens
 			- also, includes interpreting, compiling and executing 
-			- interesting observation:
-				- <img width="283" alt="Screenshot 2023-07-02 at 12 08 53 AM" src="https://github.com/user-attachments/assets/e3c211b4-140f-4aa9-8a81-51ad6936b248">
-
 				  
 - JavaScript and undefined:
 	- undefined is a special value which indicates the values isn't been set yet
