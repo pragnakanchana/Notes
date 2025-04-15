@@ -59,6 +59,7 @@
 
 ---
 
+
 ## Composition Over Inheritance
 
 - React uses Composition methodology over Inheritance.
@@ -71,6 +72,9 @@
 - Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 - Context is designed to share data that can be considered “global” for a tree of React components.
 
+---
+## Functional vs Class Components:
+<img width="934" alt="Screenshot 2025-04-15 at 2 20 20 PM" src="https://github.com/user-attachments/assets/7f20c3a8-e758-48da-bd42-e6705ac7301d" />
 ---
 
 ## Why Hooks?
