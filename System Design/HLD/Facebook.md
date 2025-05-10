@@ -39,6 +39,7 @@
   - Intersection Observer API
   - 
 - **Virtualisation**
+  -   As the user scrolls down and down, size of list can grow indefinitely and as is DOM. We need to have a check on list size that is on DOM. 
   -   less browser painting
   -   Virtual DOM Reconciliation is faster
   -   light-weighted real DOM.
