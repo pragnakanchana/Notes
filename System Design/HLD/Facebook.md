@@ -25,7 +25,11 @@
 - SSR - for first page
 - CSR - for next pages or after scrolls
 - **Ininite Scroll (Pagination)**
-  - Cursor Pagination is preffered. `{ cursor, size }`
+  - Cursor Pagination is preffered over Offset. `{ cursor, size }`
+    - reasons:
+      - data can keep on changing.
+      - Page size cannot be easily changed.
+      - Query performance degrades over time: Lastly, query performance degrades as the table                 becomes larger.
 - In case if user comes back to a stale page, 2 options can be done
   1. give user an option to refresh like a floating icon
   2. refresh automatically.
