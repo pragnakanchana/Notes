@@ -1,13 +1,24 @@
 # News Feed
 
 ## Requirements
+- *What are the core features to be supported ?*
+- *What kind of posts are supported?*
+- *What pagination technique has to be used?* - infinite scrolling
+- *On what all platforms the application has to be supported?* 
 ### Functional Requirements
 - `< same like instagram >`
 ### Non-Functional Requirements
 - `< same like instagram >`
 ### System Architecture
-- `< same like instagram >`
+- Diagram
+- Component Responsibilities
+- Rendering Approach
 ### Data Models
+- Using Normalized Data;
+  - The benefits of having a normalized store are:
+      - *Reduced duplicated data*: Single source of truth for the same piece of data that could be           presented in multiple instances on the UI. E.g. if many posts are by the same author, we're          storing duplicated data for the author field in the client store.
+  - *Easily update all data for the same entity*: In the scenario that the feed post contains many         - posts authored by the user and that user changes their name, it'd be good to be able to             immediately reflect the updated author name in the UI. This will be easier to do with a              normalized store than a store that just stores the server response verbatim.
+
 
 ### Implementation Details
 #### Rendering & Optimisation
