@@ -134,6 +134,31 @@ API - application programming interface
    
 - Official Docs is very clear
 
+## ✅ Use GraphQL When:
+
+### 1. Multiple Data Sources  
+- Ideal for aggregating data from various APIs, databases, or microservices into a single endpoint.
+
+### 2. Client-Specific Data Needs  
+- Different clients (web, mobile, desktop) can query exactly the data they need.
+
+### 3. Over-fetching or Under-fetching with REST  
+- Fetch precise data, avoiding overly large or insufficient responses typical with REST.
+
+### 4. Rapid Frontend Iteration  
+- Enables frontend teams to make changes without backend modifications.
+
+### 5. Complex Relationships Between Entities  
+- Efficiently fetch nested data (e.g., user → posts → comments) in a single query.
+
+### 6. Versionless API Requirement  
+- Evolve API schemas without the need for versioning.
+
+### 7. Strong Typing and Tooling  
+- Comes with type safety, schema introspection, and tools like GraphiQL and Apollo Studio.
+
+### 8. Real-time Updates Needed  
+- Supports **subscriptions** for real-time use cases (e.g., live chat, notifications).
 
 ## GRPC:
 - Google remote procedure call.
