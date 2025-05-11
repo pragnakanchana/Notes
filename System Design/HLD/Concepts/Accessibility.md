@@ -18,7 +18,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 <button aria-label="Close modal">✖</button>
 ```
 
---
+---
 
 #### 🔹 2. `aria-labelledby`
 
@@ -31,7 +31,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 <div aria-labelledby="section-title">...</div>
 ```
 
---
+---
 
 #### 🔹 3. `aria-describedby`
 
