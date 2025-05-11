@@ -2,13 +2,13 @@
 
 A screen reader interprets the HTML structure and ARIA (Accessible Rich Internet Applications) attributes to determine what is on the screen.
 
-# 📘 Accessibility in Frontend: ARIA Attributes Cheat Sheet
+## 📘 Accessibility in Frontend: ARIA Attributes Cheat Sheet
 
 ARIA (Accessible Rich Internet Applications) attributes help enhance accessibility, especially for screen reader users. Below is a list of commonly used ARIA attributes and their use cases.
 
 ---
 
-### 🔹 1. `aria-label`
+#### 🔹 1. `aria-label`
 
 **Purpose:** Provides a custom, accessible label for an element.
 
@@ -18,9 +18,9 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 <button aria-label="Close modal">✖</button>
 ```
 
----
+--
 
-### 🔹 2. `aria-labelledby`
+#### 🔹 2. `aria-labelledby`
 
 **Purpose:** Associates the element with another element’s text label via ID reference.
 
@@ -31,9 +31,9 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 <div aria-labelledby="section-title">...</div>
 ```
 
----
+--
 
-### 🔹 3. `aria-describedby`
+#### 🔹 3. `aria-describedby`
 
 **Purpose:** Associates additional descriptive text with an element.
 
@@ -46,7 +46,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 
 ---
 
-### 🔹 4. `aria-hidden`
+#### 🔹 4. `aria-hidden`
 
 **Purpose:** Hides elements from screen readers.
 
@@ -58,7 +58,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 
 ---
 
-### 🔹 5. `aria-live`
+#### 🔹 5. `aria-live`
 
 **Purpose:** Announces updates in dynamic content areas.
 
@@ -72,7 +72,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 
 ---
 
-### 🔹 6. State Attributes (`aria-checked`, `aria-selected`, `aria-expanded`, `aria-pressed`)
+#### 🔹 6. State Attributes (`aria-checked`, `aria-selected`, `aria-expanded`, `aria-pressed`)
 
 **Purpose:** Describe the current state of interactive UI elements.
 
@@ -88,7 +88,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 
 ---
 
-### 🔹 7. `role`
+#### 🔹 7. `role`
 
 **Purpose:** Defines the semantic role of an element.
 
@@ -102,7 +102,7 @@ ARIA (Accessible Rich Internet Applications) attributes help enhance accessibili
 
 ---
 
-### 🔹 8. `role="alert"`
+#### 🔹 8. `role="alert"`
 
 **Purpose:** Announces an element immediately when it appears.
 
